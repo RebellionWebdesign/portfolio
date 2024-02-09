@@ -1,6 +1,7 @@
-/* global base styles */
+/* Base Styles */
 :root {
     --clr-dark: #121212;
+    --clr-light: #ffffff;
     --clr-dark-70: rgba(18,18,18,0.7);
     --clr-primary: #f8d500;
 }
