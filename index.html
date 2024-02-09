@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
     <title>Daniel Stauffer - Full Stack Developer</title>
 </head>
 <body>
 
-    <header>
-        <div class="container">
+    <header class="flex flex-center">
+        <div class="container flex flex-between flex-center-y">
             <img class="logo" src="/assets/img/logo.svg" alt="my-logo">
             <nav>
                 <ul>
@@ -44,5 +45,29 @@
         </div>
     </header>
 
+    <main>
+        <section class="flex flex-center">
+            <div class="container flex flex-column">
+                <p class="greeter">Hi, mein Name ist</p>
+                <h1 class="greeter-heading">Daniel Stauffer.</h1>
+                <p class="sub-greeter">Ich baue Dinge für´s Web.</p>
+                <div class="wrapper">
+                    <p>
+                        Als Full Stack Entwickler spezialisiere ich mich auf
+                        maßgeschneiderte<br> Lösungen für Startups und KMU. 
+                    </p>
+                </div>
+                <div class="btn-wrapper flex flex-end">
+                    <a href="mailto:hello@danielstauffer.dev" class="button flex flex-center">
+                        LASS UNS REDEN
+                        <i class="lucide-mail" data-lucide="mail"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
