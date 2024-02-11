@@ -193,3 +193,37 @@ ul>li a:hover {
     margin: 0px auto;
     background-color: var(--clr-primary);
 }
+
+.photo-wrapper {
+    width: 384px;
+    height: 384px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.photo-wrapper:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px var(--clr-primary);
+    transition: 0.5s ease-in-out;
+}
+
+.photo {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.photo-overlay {
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.photo-overlay:hover {
+    opacity: 0;
+}
+
