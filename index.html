@@ -16,28 +16,38 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#" target="self" aria-label="">
-                            LINK 1
+                        <a id="start-link" href="#" target="self" aria-label="">
+                            Start
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="self" aria-label="">
-                            LINK 2
+                        <a id="info-link" href="#" target="self" aria-label="">
+                            Info
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="self" aria-label="">
-                            LINK 3
+                        <a id="skills-link" href="#" target="self" aria-label="">
+                            Skills
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="self" aria-label="">
-                            LINK 4
+                        <a id="projects-link" href="#" target="self" aria-label="">
+                            Projects
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="self" aria-label="">
-                            LINK 5
+                        <a id="contact-link" href="#" target="self" aria-label="">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="changeLanguage('de')">
+                            <img class="language-picker-de" src="/assets/img/de.svg" alt="german">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="changeLanguage('en')">
+                            <img class="language-picker-en" src="/assets/img/gb.svg" alt="english">
                         </a>
                     </li>
                 </ul>
@@ -47,21 +57,23 @@
 
     <main>
         <section class="flex flex-center">
-            <div class="container flex flex-column">
-                <p class="greeter">Hi, mein Name ist</p>
-                <h1 class="greeter-heading">Daniel Stauffer.</h1>
-                <p class="sub-greeter">Ich baue Dinge für´s Web.</p>
-                <div class="wrapper">
-                    <p>
-                        Als Full Stack Entwickler spezialisiere ich mich auf
-                        maßgeschneiderte<br> Lösungen für Startups und KMU. 
-                    </p>
+            <div class="container flex flex-center flex-column">
+                <div>
+                    <p class="greeter" data-i18n="greeter">Hi, mein Name ist</p>
+                    <h1 class="greeter-heading">Daniel Stauffer.</h1>
+                    <p class="sub-greeter" data-i18n="sub-greeter">Ich baue Dinge für´s Web.</p>
+                    <div class="wrapper">
+                        <p class="greeter-text" data-i18n="greeter-text">
+                            Als Full Stack Entwickler spezialisiere ich mich auf
+                            maßgeschneiderte<br> Lösungen für Startups und KMU.
+                        </p>
+                    </div>
+                    <div class="btn-wrapper flex flex-end">
+                        <a href="mailto:hello@danielstauffer.dev" class="button flex flex-center" data-i18n="button">
+                            LASS UNS REDEN
+                            <i class="lucide-mail" data-lucide="mail"></i>
+                        </a>
                 </div>
-                <div class="btn-wrapper flex flex-end">
-                    <a href="mailto:hello@danielstauffer.dev" class="button flex flex-center">
-                        LASS UNS REDEN
-                        <i class="lucide-mail" data-lucide="mail"></i>
-                    </a>
                 </div>
             </div>
             <div class="social-links flex flex-center flex-column">
@@ -71,9 +83,30 @@
         </section>
 
         <section class="flex flex-center">
-            <div class="container flex flex-center">
-                <div class="col-2">
-                    <h2>TEST</h2>
+            <div class="container flex flex-center gap">
+                <div class="col-2 flex flex-start flex-column">
+                    <h2>Info</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua. At vero
+                        eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr, sed diam nonumy eirmod
+                        tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea
+                        takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                    <div class="tech-wrapper">
+                        <p class="flex flex-center-y"><i class="lucide-hash" data-lucide="hash"></i>Django</p>
+                        <p class="flex flex-center-y"><i class="lucide-hash" data-lucide="hash"></i>JavaScript</p>
+                        <p class="flex flex-center-y"><i class="lucide-hash" data-lucide="hash"></i>Bootstrap</p>
+                        <p class="flex flex-center-y"><i class="lucide-hash" data-lucide="hash"></i>Tailwind</p>
+                        <p class="flex flex-center-y"><i class="lucide-hash" data-lucide="hash"></i>WordPress</p>
+                        <p class="flex flex-center-y"><i class="lucide-hash" data-lucide="hash"></i>CSS</p>
+                    </div>
                 </div>
                 <div class="col-2">
                     <div class="photo-wrapper">
@@ -87,6 +120,7 @@
     </main>
 
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="assets/js/translator.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
