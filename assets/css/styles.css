@@ -28,12 +28,31 @@ h1 {
 }
 
 h2 {
+    font-family: "Fira Code", sans-serif;
+    color: var(--clr-primary);
     font-size: clamp(1.25rem, 1.1rem + 0.75vw, 2rem);
     line-height: 1.1;
+    position: relative;
+    margin-bottom: 1rem;
 }
 
-li, h1, h2, h3, p {
-    font-family: "Inter", "sans-serif";
+h2::before {
+    content: "02.";
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    display: block;
+    width: 70%;
+    height: 1px;
+    background-color: var(--clr-primary);
+}
+
+li, h1, p {
+    font-family: "Inter", sans-serif;
 }
 
 section {
@@ -92,6 +111,66 @@ ul>li a:hover {
     transition: 0.5s ease-in-out;
 }
 
+#start-link::before {
+    content: "01.";
+    font-family: "Fira Code", sans-serif;
+    color: var(--clr-primary);
+}
+
+#start-link:hover:before {
+    content: "01.";
+    font-family: "Fira Code", sans-serif;
+    color: var(--clr-dark);
+}
+
+#info-link::before {
+    content: "02.";
+    font-family: "Fira Code", sans-serif;
+    color: var(--clr-primary);
+}
+
+#info-link:hover:before {
+    content: "02.";
+    font-family: "Fira Code", sans-serif;
+    color: var(--clr-dark);
+}
+
+#skills-link::before {
+    content: "03.";
+    font-family: "Fira Code", sans-serif;
+    color: var(--clr-primary);
+}
+
+#skills-link:hover:before {
+    content: "03.";
+    font-family: "Fira Code", sans-serif;
+    color: var(--clr-dark);
+}
+
+#projects-link::before {
+    content: "04.";
+    font-family: "Fira Code", sans-serif;
+    color: var(--clr-primary);
+}
+
+#projects-link:hover:before {
+    content: "04.";
+    font-family: "Fira Code", sans-serif;
+    color: var(--clr-dark);
+}
+
+#contact-link::before {
+    content: "05.";
+    font-family: "Fira Code", sans-serif;
+    color: var(--clr-primary);
+}
+
+#contact-link:hover:before {
+    content: "05.";
+    font-family: "Fira Code", sans-serif;
+    color: var(--clr-dark);
+}
+
 .button {
     padding: 8px 16px;
     text-decoration: none;
@@ -143,6 +222,14 @@ ul>li a:hover {
     justify-content: end;
 }
 
+.flex-start {
+    justify-content: start;
+}
+
+.gap {
+    gap: 40px;
+}
+
 /* Singularities */
 .logo {
     width: 60px;
@@ -169,11 +256,17 @@ ul>li a:hover {
 }
 
 .btn-wrapper {
-    width: 76%;
+    width: 100%;
 }
 
 .lucide-mail {
     margin-left: 1rem;
+}
+
+.lucide-hash {
+    color: var(--clr-primary);
+    width: 1rem;
+    margin-right: 0.625rem;
 }
 
 .social-links {
@@ -192,6 +285,15 @@ ul>li a:hover {
     height: 90px;
     margin: 0px auto;
     background-color: var(--clr-primary);
+}
+
+.tech-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    margin-top: 1.5rem;
 }
 
 .photo-wrapper {
@@ -227,3 +329,16 @@ ul>li a:hover {
     opacity: 0;
 }
 
+.language-picker-de {
+    width: 1rem;
+    margin-right: -24px;
+}
+
+.language-picker-en {
+    width: 1rem;
+    margin-right: 0;
+}
+
+.greeter-text {
+    white-space: pre;
+}
