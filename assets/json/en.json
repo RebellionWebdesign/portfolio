@@ -1,6 +1,11 @@
 {
     "greeter": "Hi, my name is",
     "sub-greeter": "I build things for the web.",
-    "greeter-text": "As full stack developer, I specialize in building\nsites for Startups, Musicians and KMU",
-    "button": "LET´S TALK"
+    "greeter-text": "As full stack developer, I specialize in building\nsites for Musicians, Startups, Musicians and KMU.",
+    "button": "LET´S TALK",
+    "start": "Start",
+    "info": "Info",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
 }
