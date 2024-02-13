@@ -51,8 +51,12 @@ h2::after {
     background-color: var(--clr-primary);
 }
 
-li, h1, p {
+h1, p {
     font-family: "Inter", sans-serif;
+}
+
+li {
+    font-family: "Fira Code", sans-serif;
 }
 
 section {
@@ -256,11 +260,7 @@ ul>li a:hover {
 }
 
 .btn-wrapper {
-    width: 100%;
-}
-
-.lucide-mail {
-    margin-left: 1rem;
+    width: 78%;
 }
 
 .lucide-hash {
@@ -271,7 +271,6 @@ ul>li a:hover {
 
 .social-links {
     color: var(--clr-primary);
-    gap: 1rem;
     position: fixed;
     left: 50px;
     bottom: 0px;
@@ -285,6 +284,10 @@ ul>li a:hover {
     height: 90px;
     margin: 0px auto;
     background-color: var(--clr-primary);
+}
+
+.social-links>a {
+    color: var(--clr-primary);
 }
 
 .tech-wrapper {
@@ -342,3 +345,31 @@ ul>li a:hover {
 .greeter-text {
     white-space: pre;
 }
+
+.lucide-github {
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 1rem;
+} 
+
+.lucide-github:hover {
+    padding: 5px;
+    color: var(--clr-dark);
+    background-color: var(--clr-primary);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.lucide-linkedin {
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 1rem;
+} 
+
+.lucide-linkedin:hover {
+    padding: 5px;
+    color: var(--clr-dark);
+    background-color: var(--clr-primary);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+} 
