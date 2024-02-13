@@ -6,31 +6,26 @@ function updateContent(langData) {
     });
 }
 
-// Function to set the language preference
-function setLanguagePreference(lang) {
-    localStorage.setItem('language', lang);
-    location.reload();
-}
-
 // Function to fetch language data
 async function fetchLanguageData(lang) {
     const response = await fetch(`/assets/json/${lang}.json`);
     return response.json();
 }
 
-// Function to change language
+// Function to change language and update content
 async function changeLanguage(lang) {
-    await setLanguagePreference(lang);
-    
     const langData = await fetchLanguageData(lang);
     updateContent(langData);
     toggleGermanStylesheet(lang);
 }
 
-// Call updateContent() on page load
-window.addEventListener('DOMContentLoaded', async () => {
-    const userPreferredLanguage = localStorage.getItem('language') || 'en';
+// Function to initialize and apply language settings
+async function initializeLanguage() {
+    // Use browser language as the primary option, fallback to 'de'
+    const userPreferredLanguage = navigator.language.split('-')[0] || 'de';
     const langData = await fetchLanguageData(userPreferredLanguage);
     updateContent(langData);
-    toggleGermanStylesheet(userPreferredLanguage);
-});
+}
+
+// Call initializeLanguage() on page load
+window.addEventListener('DOMContentLoaded', initializeLanguage);
