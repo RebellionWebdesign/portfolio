@@ -16,38 +16,28 @@
             <nav>
                 <ul>
                     <li>
-                        <a id="start-link" href="#" target="self" aria-label="">
+                        <a id="start-link" data-i18n="start" href="#" target="_self" aria-label="">
                             Start
                         </a>
                     </li>
                     <li>
-                        <a id="info-link" href="#" target="self" aria-label="">
+                        <a id="info-link" data-i18n="info" href="#" target="_self" aria-label="">
                             Info
                         </a>
                     </li>
                     <li>
-                        <a id="skills-link" href="#" target="self" aria-label="">
-                            Skills
+                        <a id="skills-link" data-i18n="skills" href="#" target="_self" aria-label="">
+                            Fähigkeiten
                         </a>
                     </li>
                     <li>
-                        <a id="projects-link" href="#" target="self" aria-label="">
-                            Projects
+                        <a id="projects-link" data-i18n="projects" href="#" target="_self" aria-label="">
+                            Projekte
                         </a>
                     </li>
                     <li>
-                        <a id="contact-link" href="#" target="self" aria-label="">
-                            Contact
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="changeLanguage('de')">
-                            <img class="language-picker-de" src="/assets/img/de.svg" alt="german">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="changeLanguage('en')">
-                            <img class="language-picker-en" src="/assets/img/gb.svg" alt="english">
+                        <a id="contact-link" data-i18n="contact" href="#" target="_self" aria-label="">
+                            Kontakt
                         </a>
                     </li>
                 </ul>
@@ -57,7 +47,7 @@
 
     <main>
         <section class="flex flex-center">
-            <div class="container flex flex-center flex-column">
+            <div class="container flex flex-start flex-column">
                 <div>
                     <p class="greeter" data-i18n="greeter">Hi, mein Name ist</p>
                     <h1 class="greeter-heading">Daniel Stauffer.</h1>
@@ -65,20 +55,19 @@
                     <div class="wrapper">
                         <p class="greeter-text" data-i18n="greeter-text">
                             Als Full Stack Entwickler spezialisiere ich mich auf
-                            maßgeschneiderte<br> Lösungen für Startups und KMU.
+                            maßgeschneiderte<br> Lösungen für Musiker, Startups und KMU.
                         </p>
                     </div>
                     <div class="btn-wrapper flex flex-end">
                         <a href="mailto:hello@danielstauffer.dev" class="button flex flex-center" data-i18n="button">
                             LASS UNS REDEN
-                            <i class="lucide-mail" data-lucide="mail"></i>
                         </a>
                 </div>
                 </div>
             </div>
             <div class="social-links flex flex-center flex-column">
-                <i data-lucide="github"></i>
-                <i data-lucide="linkedin"></i>
+                <a href="https://github.com/RebellionWebdesign" target="_blank"><i class="lucide-github" data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/danielstaufferdev/" target="_blank"></a><i class="lucide-linkedin" data-lucide="linkedin"></i></a>
             </div>
         </section>
 
