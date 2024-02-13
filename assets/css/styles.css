@@ -119,30 +119,36 @@ ul>li a:hover {
     content: "01.";
     font-family: "Fira Code", sans-serif;
     color: var(--clr-primary);
+    transition: 0.5s ease-in-out;
 }
 
 #start-link:hover:before {
     content: "01.";
     font-family: "Fira Code", sans-serif;
     color: var(--clr-dark);
+    transition: 0.5s ease-in-out;
 }
 
 #info-link::before {
     content: "02.";
     font-family: "Fira Code", sans-serif;
     color: var(--clr-primary);
+    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 #info-link:hover:before {
     content: "02.";
     font-family: "Fira Code", sans-serif;
     color: var(--clr-dark);
+    transition: 0.5s ease-in-out;
 }
 
 #skills-link::before {
     content: "03.";
     font-family: "Fira Code", sans-serif;
     color: var(--clr-primary);
+    transition: 0.5s ease-in-out;
 }
 
 #skills-link:hover:before {
@@ -155,24 +161,28 @@ ul>li a:hover {
     content: "04.";
     font-family: "Fira Code", sans-serif;
     color: var(--clr-primary);
+    transition: 0.5s ease-in-out;
 }
 
 #projects-link:hover:before {
     content: "04.";
     font-family: "Fira Code", sans-serif;
     color: var(--clr-dark);
+    transition: 0.5s ease-in-out;
 }
 
 #contact-link::before {
     content: "05.";
     font-family: "Fira Code", sans-serif;
     color: var(--clr-primary);
+    transition: 0.5s ease-in-out;
 }
 
 #contact-link:hover:before {
     content: "05.";
     font-family: "Fira Code", sans-serif;
     color: var(--clr-dark);
+    transition: 0.5s ease-in-out;
 }
 
 .button {
@@ -260,7 +270,7 @@ ul>li a:hover {
 }
 
 .btn-wrapper {
-    width: 78%;
+    width: 100%;
 }
 
 .lucide-hash {
