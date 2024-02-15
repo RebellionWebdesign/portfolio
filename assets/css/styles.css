@@ -449,3 +449,21 @@ ul>li a:hover {
     transform: translate(-32%, -30%);
     border-radius: 50%;
 }
+
+@media (min-width: 320px) {
+
+    header {
+        display: none;
+    }
+
+    .sub-greeter {
+        font-size: 1.25rem;
+    }
+
+    section {
+        width: 100%;
+        height: 100vh;
+        padding: 5rem 1.25rem;
+        overflow: visible;
+    }
+}
