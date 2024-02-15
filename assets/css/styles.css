@@ -22,7 +22,7 @@ body {
 }
 
 h1 {
-    font-size: clamp(1.5rem, 3.5vw + 0.8rem, 5rem);
+    font-size: clamp(2rem, 3.5vw + 0.8rem, 5rem);
     margin-left: -4px;
     line-height: 1.1;
 }
@@ -433,7 +433,6 @@ ul>li a:hover {
     box-shadow: 0 0 20px var(--clr-primary),
                 0 0 60px var(--clr-primary),
                 0 0 100px var(--clr-primary);
-    animation: colors 5s infinite;
     transform: translate(-50%, -50%);
     display: none;
     transition: transform 0.25s ease-in-out;
@@ -448,4 +447,38 @@ ul>li a:hover {
     opacity: 0.2;
     transform: translate(-32%, -30%);
     border-radius: 50%;
+}
+
+@media (min-width: 320px) {
+    header {
+        padding: 5px 1.25rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    section {
+        padding: 10px 20px;
+    }
+
+    .sub-greeter {
+        font-size: 20px;
+    }
+
+    .cursor {
+        display: none!important;
+    }
+
+    .btn-wrapper {
+        justify-content: center!important;
+    }
+
+    .greeter-text {
+        display: none;
+    }
+
+    br {
+        display: none!important;
+    }
 }
