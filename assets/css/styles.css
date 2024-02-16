@@ -74,7 +74,7 @@ li {
 section {
     width: 100%;
     height: 100vh;
-    padding: 5rem 28.75rem;
+    padding: 5rem 16.25rem;
     overflow: visible;
 }
 
@@ -486,8 +486,18 @@ ul>li a:hover {
         height: 6vh;
     }
 
+    section {
+        padding: 5rem 8.125rem;
+    }
+
     .lucide-open {
         display: none;
+    }
+
+    .sub-greeter {
+        font-size: clamp(1.25rem, 3.5vw + 0.8rem, 3.75rem);
+        font-weight: 800;
+        margin-left: -4px;
     }
 }
 
@@ -561,6 +571,10 @@ ul>li a:hover {
         z-index: 100;
         transition: 0.5s ease-in-out;
     }
+
+    section {
+        padding: 5rem 7rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -592,6 +606,10 @@ ul>li a:hover {
         top: 10px;
         left: 20px;
         display: block;
+    }
+
+    section {
+        padding: 5rem 1.25rem;
     }
 }
 
