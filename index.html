@@ -15,7 +15,8 @@
     <header class="flex flex-center">
         <div class="container flex flex-between flex-center-y">
             <img class="logo" src="/assets/img/logo.svg" alt="my-logo">
-            <nav>
+            <nav id="nav">
+                <i id="close" class="lucide-close hide" data-lucide="x"></i>
                 <ul>
                     <li>
                         <a id="start-link" data-i18n="start" href="#" target="_self" aria-label="start here">
@@ -44,11 +45,12 @@
                     </li>
                 </ul>
             </nav>
+            <i id="open" class="lucide-open hide" data-lucide="menu"></i>
         </div>
     </header>
 
     <main>
-        <section class="flex flex-center">
+        <section class="flex flex-center hide">
             <div class="container flex flex-center flex-column">
                 <div>
                     <p class="greeter" data-i18n="greeter">Hi, mein Name ist</p>
@@ -77,7 +79,7 @@
             </div>
         </section>
 
-        <section class="flex flex-center">
+        <section class="flex flex-center hide">
             <div class="container flex flex-center gap">
                 <div class="col-2 flex flex-start flex-column">
                     <h2 class="info-heading">Info</h2>
@@ -112,7 +114,7 @@
             </div>
         </section>
 
-        <section class="flex flex-center">
+        <section class="flex flex-center hide">
             <div class="container flex flex-start flex-column gap">
                 <div class="col-2 flex flex-start flex-column">
                     <h2 class="skills-heading">Fähigkeiten</h2>
