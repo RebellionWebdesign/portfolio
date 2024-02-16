@@ -38,12 +38,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
         nav.style.right = "0"
         close.classList.add("rotate")
         close.classList.remove("backrotate")
+        open.style.display = "none"
+        open.style.transition = "0.5s ease-in-out"
     })
 
     close.addEventListener("click", () => {
         nav.style.right = "-55%"
         close.classList.remove("rotate")
         close.classList.add("backrotate")
+        open.style.display = "block"
+        open.style.transition = "0.5s ease-in-out"
     })
 
 });
