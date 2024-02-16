@@ -262,6 +262,20 @@ ul>li a:hover {
     gap: 40px;
 }
 
+.hide {
+    display: none;
+}
+
+.rotate {
+    transition: 0.5s ease-in-out;
+    transform: rotate(360deg);
+}
+
+.backrotate {
+    transition: 0.5s ease-in-out;
+    transform: rotate(-360deg);
+}
+
 /* Singularities */
 .logo {
     width: 60px;
@@ -452,10 +466,43 @@ ul>li a:hover {
 @media (min-width: 320px) {
     header {
         padding: 5px 1.25rem;
+        height: auto;
+    }
+
+    .logo {
+        width: 40px;
     }
 
     nav {
-        display: none;
+        background-color: var(--clr-dark);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: 0;
+        right: -55%;
+        height: 100vh;
+        width: 55%;
+        z-index: 100;
+        transition: 0.5s ease-in-out;
+    }
+
+    .lucide-open {
+        display: block;
+    }
+
+    .lucide-close {
+        color: var(--clr-primary);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: block;
+    }
+
+    nav ul li {
+        margin-bottom: 1.5rem;
     }
 
     section {
@@ -482,3 +529,4 @@ ul>li a:hover {
         display: none!important;
     }
 }
+
