@@ -2,13 +2,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     lucide.createIcons();
 
-    let navLinks = document.querySelectorAll('nav a');
-    navLinks.forEach(function (link) {
-        if (link.href === window.location.href) {
-            link.classList.add('active');
-        }
-    });
-
     document.addEventListener("mousemove", (e) => {
         const cursor = document.querySelector(".cursor")
         const button = document.querySelector(".button")
@@ -36,4 +29,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
             cursor.style.backgroundColor = '#f8d500';
         }
     })
+
+    const open = document.getElementById("open")
+    const close = document.getElementById("close")
+    const nav = document.getElementById("nav")
+
+    open.addEventListener("click", () => {
+        nav.style.right = "0"
+        close.classList.add("rotate")
+        close.classList.remove("backrotate")
+    })
+
+    close.addEventListener("click", () => {
+        nav.style.right = "-55%"
+        close.classList.remove("rotate")
+        close.classList.add("backrotate")
+    })
+
 });
