@@ -480,12 +480,21 @@ ul>li a:hover {
     }
 }
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+
+    header {
+        height: 6vh;
+    }
+
+    .lucide-open {
+        display: none;
+    }
+}
 
 @media (max-width: 992px) {
     header {
         padding: 5px 1.25rem;
-        height: auto;
+        height: 6vh;
     }
 
     .logo {
@@ -531,6 +540,11 @@ ul>li a:hover {
 }
 
 @media (max-width: 768px) {
+
+    header {
+        height: 6vh;
+    }
+
     nav {
         background-color: var(--clr-dark);
         backdrop-filter: blur(5px);
