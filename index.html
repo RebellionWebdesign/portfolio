@@ -1,141 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/fonts.css">
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
-    <title>Daniel Stauffer - Full Stack Developer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Expert Full Stack Developer specializing 
+                                      in modern web technologies and custom
+                                      solutions for dynamic, interactive and 
+                                      static websites.">
+    <meta name="keywords" content="Full Stack Developer, Web Development,
+                                  Custom Web Solutions, Frontend Development,
+                                  Backend Development, Web Application Development,
+                                  JavaScript Developer, HTML5 CSS3 Developer,
+                                  Responsive Web Design, API Development,
+                                  Database Design, Software Engineering,
+                                  Django Developer, Freelance Web Development,
+                                  Freelancer, Freelancer Developer">
+
+    <meta name="author" content="Daniel Stauffer">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="assets/img/apple/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/img/apple/touch-icon-ipad-retina.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <title>Daniel Stauffer - Full Stack Development</title>
 </head>
+
 <body>
 
-    <div class="cursor"></div>
-
-    <header class="flex flex-center">
-        <div class="container flex flex-between flex-center-y">
-            <img class="logo" src="/assets/img/logo.svg" alt="my-logo">
-            <nav id="nav">
-                <i id="close" class="lucide-close hide" data-lucide="x"></i>
-                <ul>
-                    <li>
-                        <a id="start-link" data-i18n="start" href="#" target="_self" aria-label="start here">
-                            Start
-                        </a>
-                    </li>
-                    <li>
-                        <a id="info-link" data-i18n="info" href="#" target="_self" aria-label="about me">
-                            Info
-                        </a>
-                    </li>
-                    <li>
-                        <a id="skills-link" data-i18n="skills" href="#" target="_self" aria-label="my skills">
-                            Fähigkeiten
-                        </a>
-                    </li>
-                    <li>
-                        <a id="projects-link" data-i18n="projects" href="#" target="_self" aria-label="my projects">
-                            Projekte
-                        </a>
-                    </li>
-                    <li>
-                        <a id="contact-link" data-i18n="contact" href="#" target="_self" aria-label="contact me">
-                            Kontakt
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <i id="open" class="lucide-open hide" data-lucide="menu"></i>
-        </div>
-    </header>
+    <header></header>
 
     <main>
-        <section class="flex flex-center">
-            <div class="container flex flex-center flex-column">
-                <div>
-                    <p class="greeter" data-i18n="greeter">Hi, mein Name ist</p>
-                    <h1 class="greeter-heading">Daniel Stauffer.</h1>
-                    <p class="sub-greeter" data-i18n="sub-greeter">Ich baue Dinge für´s Web.</p>
-                    <div class="wrapper">
-                        <p class="greeter-text" data-i18n="greeter-text">
-                            Als Full Stack Entwickler spezialisiere ich mich auf
-                            maßgeschneiderte<br> Lösungen für Musiker, Startups und KMU.
-                        </p>
-                    </div>
-                    <div class="btn-wrapper flex flex-end">
-                        <a href="mailto:hello@danielstauffer.dev" class="button flex flex-center" data-i18n="button">
-                            LASS UNS REDEN
-                        </a>
+        <section class="flex flex--center">
+            <div class="container flex flex--start">
+                <div class="content-wrapper">
+                    <p class="pre-heading text--primary">Hi, my name is</p>
+                    <h1 class="main-heading text--light">Daniel Stauffer.<br>I build for the Web</h1>
+                    <p class="text text--light top-margin bottom-margin--l">
+                        and I specialize in accessible, digital experiences for Musicians, Startups and KMU.
+                    </p>
+                    <a href="mailto:hello@danielstauffer.dev" class="contact-button">
+                        LET´S TALK
+                    </a>
                 </div>
-                </div>
-            </div>
-            <div class="social-links flex flex-center flex-column">
-                <a href="https://github.com/RebellionWebdesign" target="_blank">
-                    <i class="lucide-github" data-lucide="github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/danielstaufferdev/" target="_blank">
-                    <i class="lucide-linkedin" data-lucide="linkedin"></i>
-                </a>
             </div>
         </section>
 
-        <section class="flex flex-center hide">
-            <div class="container flex flex-center gap">
-                <div class="col-2 flex flex-start flex-column">
-                    <h2 class="info-heading">Info</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonumy eirmod tempor invidunt ut labore et
-                        dolore magna aliquyam erat, sed diam voluptua. At vero
-                        eos et accusam et justo duo dolores et ea rebum. Stet
-                        clita kasd gubergren, no sea takimata sanctus est Lorem
-                        ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                        consetetur sadipscing elitr, sed diam nonumy eirmod
-                        tempor invidunt ut labore et dolore magna aliquyam erat,
-                        sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum. Stet clita kasd gubergren, no sea
-                        takimata sanctus est Lorem ipsum dolor sit amet.
+        <section class="about-section flex flex--center">
+            <div class="container flex">
+                <div class="column--50">
+                    <h2 class="pre-heading text--primary bottom-margin">
+                        About
+                    </h2>
+                    <p class="text text--light">
+                        Hey, my name is Daniel Stauffer and I am a Full Stack
+                        Developer. I have a background in process engineering,
+                        quality management and 3D Design. Web development has
+                        interested me for a long time, so I started my journey
+                        with WordPress in 2015.
+                        <br><br>
+                        I always have been interested in how backend work was done and after some
+                        unfortunate events in my last job I decided to pull the
+                        plug and became a student in Full Stack Web Development. Now
+                        I want to enrich the Web with simple and accessible,
+                        yet functional and good looking experiences.
+                        <br><br>
+                        Below are some of the technologies I worked with recently:
                     </p>
                     <div class="tech-wrapper">
-                        <p class="flex flex-center-y"><i class="lucide-hash" data-lucide="hash"></i>Django</p>
-                        <p class="flex flex-center-y"><i class="lucide-hash" data-lucide="hash"></i>JavaScript</p>
-                        <p class="flex flex-center-y"><i class="lucide-hash" data-lucide="hash"></i>Bootstrap</p>
-                        <p class="flex flex-center-y"><i class="lucide-hash" data-lucide="hash"></i>Tailwind</p>
-                        <p class="flex flex-center-y"><i class="lucide-hash" data-lucide="hash"></i>WordPress</p>
-                        <p class="flex flex-center-y"><i class="lucide-hash" data-lucide="hash"></i>CSS</p>
+                        <p class="flex flex-center-y text text--light">
+                            <i class="text--primary li-hash" data-lucide="hash"></i>
+                            Django
+                        </p>
+                        <p class="flex flex-center-y text text--light">
+                            <i class="text--primary li-hash" data-lucide="hash"></i>
+                            JavaScript
+                        </p>
+                        <p class="flex flex-center-y text text--light">
+                            <i class="text--primary li-hash" data-lucide="hash"></i>
+                            Bootstrap
+                        </p>
+                        <p class="flex flex-center-y text text--light">
+                            <i class="text--primary li-hash" data-lucide="hash"></i>
+                            Tailwind
+                        </p>
+                        <p class="flex flex-center-y text text--light">
+                            <i class="text--primary li-hash" data-lucide="hash"></i>
+                            WordPress
+                        </p>
+                        <p class="flex flex-center-y text text--light">
+                            <i class="text--primary li-hash" data-lucide="hash"></i>
+                            CSS
+                        </p>
                     </div>
                 </div>
-                <div class="col-2 flex flex-end">
-                    <div class="photo-wrapper">
-                        <img src="/assets/img/daniel-funny-oic-halftone.webp" alt="this is me" class="photo-overlay">
-                        <img src="/assets/img/daniel-funny-oic.webp" alt="this is also me" class="photo">
+                <div class="column--50 flex flex--end">
+                    <div class="image-wrapper">
+                        <img class="image"
+                            src="https://res.cloudinary.com/drvhhiqov/image/upload/v1708690352/portfolio/daniel-funny-oic_kbddnx.webp"
+                            alt="this is me">
+                        <img class="image-overlay"
+                            src="https://res.cloudinary.com/drvhhiqov/image/upload/v1708690352/portfolio/daniel-funny-oic-halftone_xd4pmq.webp"
+                            alt="this is also me">
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="flex flex-center hide">
-            <div class="container flex flex-start flex-column gap">
-                <div class="col-2 flex flex-start flex-column">
-                    <h2 class="skills-heading">Fähigkeiten</h2>
-                </div>
-                <div class="col-1 flex flex-column">
-                    <p class="bar-label">HTML</p>
-                    <div class="skill-bar html">90%</div>
-                    <p class="bar-label">CSS</p>
-                    <div class="skill-bar css">90%</div>
-                    <p class="bar-label">JS</p>
-                    <div class="skill-bar js">70%</div>
-                    <p class="bar-label">DJANGO</p>
-                    <div class="skill-bar dj">80%</div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
+    <footer></footer>
+
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="assets/js/translator.js"></script>
+    <!--<script src="assets/js/translator.js"></script>-->
     <script src="assets/js/index.js"></script>
 </body>
+
 </html>
